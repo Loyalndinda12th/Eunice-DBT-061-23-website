@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My University Website</title>
+        <link rel="stylesheet" href="/css/stylesheet.css" type="text/css">
+    </head>
+<body>
+    <!-- Heading One -->
+    <div class="header">
+    <h1>
+        This is My University Website
+    </h1>
+    <!-- Navigation Bar-->
+    <ul class="ul" id="nav" style="width: 100%; float: left; margin: 0 0 3em 0; padding: 0;
+    list-style: none; background-color: #f2f2f2; border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;">
+        <li style="float: left; display: block; padding: 8px 15px; font-weight: bold; color: #069; border-right: 1px solid #ccc;">
+            <a href="#" id="home" onclick="showHome()">Home</a></li> 
+        <li style="float: left; display: block; padding: 8px 15px; font-weight: bold; color: #069; border-right: 1px solid #ccc;">
+            <a href="#" id="abt" onclick="showAbout()">About Us</a></li>
+        <li style="float: left; display: block; padding: 8px 15px; font-weight: bold; color: #069; border-right: 1px solid #ccc;">
+            <a href="#" id="dept" onclick="showDepartments()">Departments</a></li>
+        <li style="float: left; display: block; padding: 8px 15px; font-weight: bold; color: #069; border-right: 1px solid #ccc;">
+            <a href="#" id="cont" onclick="showContact()">Contact</a></li>
+    </ul>
+    </div>
+    <!--About Section-->
+    <p id="about" style="display: none;">
+        Kiriri Women's University is a leading institution dedicated to academic excellence
+    </p>
+    <!--Departments Section-->
+    <ol id="departments" style="display: none;">
+        <li>Computer Science</li>
+        <li>Mathematics</li>
+        <li>Business</li>
+        <li>Education</li>
+        <li>Hospitality</li>
+        <li>Information Technology</li>
+    </ol>
+    <!--Contact Section-->
+    <div id="contact" style="display: none;">
+        <p>
+            Kiriri Women’s University of Science & Technology
+            off Thika Road
+            P.O. BOX 49274 – 00100
+            Nairobi, Kenya
+        </p>
+        <p>
+            Email Address: info@kwust.ac.ke.
+        </p>
+        <p>
+            Phone: +254 (0) 202042692/3
+        </p>
+    </div>
+
+    <!---Home Section-->
+    <div class="img" id="homes" style="display: block;">
+        <p>
+            Kiriri Women’s University of Science and Technology (KWUST) is a private,
+            women-only Kenyan university. Founded in 2002, its main objective
+            is to bridge the gender gap in higher education while contributing
+            to the country’s social and economic development12. KWUST offers
+            market-oriented courses in science, technology, business, and
+            computer science at its serene campus in Ruiru, Kiambu County.
+            As a Christian-based institution, it empowers women through scientific
+            education based on Christian principles
+            </p>
+        <img src="/image.png" alt="Kiriri Women's University">
+        
+    </div>
+    <script>
+        // Show about page
+        function showAbout() {
+          const aboutSection = document.getElementById("about");
+          aboutSection.style.display = "block";
+        }
+        function hideAbout() {
+          const aboutSection = document.getElementById("about");
+          aboutSection.style.display = "none";
+        }
+        document.getElementById("dept").addEventListener("click", hideAbout);
+        document.getElementById("home").addEventListener("click", hideAbout);
+        document.getElementById("cont").addEventListener("click", hideAbout);
+        
+        // Show departments Page
+        function showDepartments() {
+          const aboutSection = document.getElementById("departments");
+          aboutSection.style.display = "block";
+        }
+        function hideDepartments() {
+          const aboutSection = document.getElementById("departments");
+          aboutSection.style.display = "none";
+        }
+        document.getElementById("abt").addEventListener("click", hideDepartments);
+        document.getElementById("home").addEventListener("click", hideDepartments);
+        document.getElementById("cont").addEventListener("click", hideDepartments);
+        
+        //Show contacts page
+        function showContact() {
+          const aboutSection = document.getElementById("contact");
+          aboutSection.style.display = "block";
+        }
+        function hideContact() {
+          const aboutSection = document.getElementById("contact");
+          aboutSection.style.display = "none";
+        }
+        document.getElementById("abt").addEventListener("click", hideContact);
+        document.getElementById("home").addEventListener("click", hideContact);
+        document.getElementById("dept").addEventListener("click", hideContact);
+        // Show home
+        function showHome() {
+          const aboutSection = document.getElementById("homes");
+          aboutSection.style.display = "block";
+        }
+        function hideHome() {
+          const aboutSection = document.getElementById("homes");
+          aboutSection.style.display = "none";
+        }
+        document.getElementById("abt").addEventListener("click", hideHome);
+        document.getElementById("cont").addEventListener("click", hideHome);
+        document.getElementById("dept").addEventListener("click", hideHome);
+        
+        </script>
+    </body>
+</html>

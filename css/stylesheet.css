@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    margin: 1.25rem; /*20px/16px*/
+}
+
+.header {
+    background-color: hsl(240, 47%, 64%);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+h1, h2 {
+    color: #008000;
+}
+
+.img {
+    display: block;
+    margin: 1.25rem;/*20px/16px*/
+}
+
+.hr {
+    border: 0;
+    height: 0.0625rem;
+    background-color: #ffa500;
+    margin: 20px;
+}
